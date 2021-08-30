@@ -1,24 +1,17 @@
-import './App.css';
-import React,{Component} from 'react';
-import {Route,Redirect} from "react-router-dom"
-import tabs from './tabs'
-import Introduction from './Introduction'
-import Learn from './Learn'
+import React, { Component } from "react";
+import { Route, Redirect } from "react-router-dom";
+import tabs from "./Data";
+import FirstTab from "./FirstTab";
+import Tabs from "./Tabs";
 
-
-
-export default class App extends Component{
-render(){
-return(
-<>
-<Introduction tabs={tabs} />
-<Route path='/:name' render={(p)=><Learn name={p} />} />
-<Redirect exact from="/" to="/Introduction" />
-
-</>
-)
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <FirstTab tabs={tabs} />
+        <Route path="/:name" render={(prop) => <Tabs name={prop} />} />
+        <Redirect exact from="/" to="/Introduction" />
+      </>
+    );
+  }
 }
-
-
-}
-
