@@ -7,7 +7,7 @@ const tabs= [
       ]
     },
     {
-      name: 'the instance',
+      name: 'the-instance',
       subTabs: [
         { name: 'creating a instance' },
         { name: 'data and methods' },
@@ -15,11 +15,14 @@ const tabs= [
       ]
     },
     {
-      name: 'list rendering',
+      name: 'list-rendering',
       subTabs: [
         { name: 'mapping an array to elements' },
       ]
     },
   ]
 
-export default tabs;
+const url=[{name:'Introduction'},{name:"the-instance"},{name:"list-rendering"}
+]
+
+export {tabs,url};

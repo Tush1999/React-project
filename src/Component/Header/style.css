@@ -1,0 +1,43 @@
+.flex-div {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  align-items: center;
+  height:36px;
+}
+
+.active-Link {
+  align-items: center !important;
+  height: 40px;
+  color: red !important;
+  text-decoration: none;
+  margin-top: 27px;
+}
+.Link {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  text-decoration: none;
+}
+.para-content {
+  color: black;
+  margin: 5px;
+  padding: 8px;
+  text-align: start;
+}
+li:hover {
+  cursor: pointer;
+}
+.active-text {
+  color: red;
+}
+li {
+  list-style: none;
+  padding: 8px;
+}
+.left{
+  display:flex;
+  width:30%;
+  justify-content: space-around;
+}

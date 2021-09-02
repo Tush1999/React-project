@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import tabs from "./Data";
+import {tabs} from "../../Data";
 
 export default class Tabs extends Component {
   constructor() {
