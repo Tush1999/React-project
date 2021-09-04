@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Redirect } from "react-router-dom";
-import {tabs} from "./Data";
+import { tabs } from "./Data";
 import Header from "./Component/Header/index";
 import Tabs from "./Component/Tabs/index";
 
