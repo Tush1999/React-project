@@ -13,12 +13,11 @@ export default class Tabs extends Component {
     if (index === this.state.active) this.setState({ active: -1 });
     else this.setState({ active: index });
   }
-  shouldComponentUpdate(prevProp) {
-    if (prevProp.name.match.params.name !== this.props.name.match.params.name)
-      this.setState({ active: 0 });
-    return true;
-  }
 
+  componentWillReceiveProps(newProps) {
+    if (newProps.name.match.params.name !== this.props.name.match.params.name)
+      this.setState({ active: 0 });
+  }
   render() {
     let name = this.props.name.match.params.name;
 
